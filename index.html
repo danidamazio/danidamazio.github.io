@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D. Damazio | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Olá mundo.</h1>
+    <ul class="navigation">
+        <li><a href="#">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <span class="toggleMenu"></span>
+    </ul>
+    <script>
+        let toggleMenu = document.querySelector('.toggleMenu');
+        let navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
